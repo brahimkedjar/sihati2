@@ -1,0 +1,22 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SSH_PRIVATE_KEY: |
+          -----BEGIN RSA PRIVATE KEY-----
+          b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABD1ITJ5G6
+          ois+ZcaE/I7XGZAAAAEAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIG3WSujGWIMirbmj
+          9jl3nKwzQqJS9zEKh63fxokXfUZoAAAAoP+z1MeI0qHpWMaBGNA23+xMn7dWDeipvKiTks
+          U+y7UVbd0E+KZ1m3KaLv8H5nLYrtqvnyMlC2WBjQ4dJWP1HSmROFcigH/4lh2Rptr33oXj
+          NtZypt1f262f9DE4WunBJJRcgeLankazX5kCHVf9hTPH4gD5GCIT1Z0rOvp0ZJw0lUWASZ
+          ZDNMDxaYOUAJNmw/vGUBeB8FD3CB4FerfIvrk=
+          -----END RSA PRIVATE KEY-----
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  db:
+    image: postgres:9.6-alpine
