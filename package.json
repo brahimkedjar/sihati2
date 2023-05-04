@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "export NODE_OPTIONS=--openssl-legacy-provider; gatsby build",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider",
     "build:watch": "./node_modules/.bin/webpack --watch",
     "serve": "./node_modules/.bin/webpack serve",
     "webpack-dev-server": "webpack-dev-server",
