@@ -13,7 +13,6 @@ function DoctorAccount(props) {
   });
 
   useEffect(() => {
-    console.log(doctorData);
   }, [doctorData]);
 
   const handleModify = () => {

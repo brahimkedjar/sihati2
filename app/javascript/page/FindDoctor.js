@@ -41,7 +41,6 @@ function FindDoctor(props) {
       .then((res) => res.json())
       .then((data) => setItemsData(data));
   }, []);
-console.log(itemsData);
  return (
     <div className={styles.FindDoctor}>
       <div className={styles.annons}>
