@@ -13,7 +13,7 @@ function Appointments() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/api/v1/notification_doctor');
+        const response = await fetch('https://sihatiservice.onrender.com:3000/api/v1/notification_doctor');
         const data = await response.json();
         setFilteredTexts(data.notifications);
         setLoading(false);

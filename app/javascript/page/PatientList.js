@@ -13,9 +13,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'react-calendar/dist/Calendar.css';
 import { Slider } from '@mui/material';
 import L from 'leaflet';
-import "../css/map.css";
 import haversineDistance from 'haversine-distance'
 import styles from '../css/PatientList.module.css';
+import "../css/map.css";
 
 function openGoogleMaps(latitude, longitude) {
   const mapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
@@ -137,7 +137,7 @@ const PatientList = (props) => {
   async function handleConfirmation() {
     try {
 
-      const apiUrl = 'http://192.168.42.170:3000/api/v1/send_notifications';
+      const apiUrl = 'https://sihatiservice.onrender.com:3000/api/v1/send_notifications';
       const groupIds = Array.isArray(groupId) ? groupId : [groupId];
       const response = await fetch(apiUrl, {
         method: 'POST',
