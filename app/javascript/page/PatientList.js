@@ -316,7 +316,7 @@ const PatientList = (props) => {
   <Typography
     variant="h3"
     component="h2"
-    color="#ffffff"
+    color="primary"
     fontWeight="bold"
     fontSize="35px"
     ref={recommendationsRef}
