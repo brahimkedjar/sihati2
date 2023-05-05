@@ -37,7 +37,7 @@ function FindDoctor(props) {
 
   // Fetch data from API on component mount and whenever selectedCommune or selectedSpecialty change
   useEffect(() => {
-    fetch(`https://sihatiservice.onrender.com:3000/get_patients/${userData.patient_data.id}`)
+    fetch(`/get_patients/${userData.patient_data.id}`)
       .then((res) => res.json())
       .then((data) => setItemsData(data));
   }, []);

@@ -137,7 +137,7 @@ const PatientList = (props) => {
   async function handleConfirmation() {
     try {
 
-      const apiUrl = 'https://sihatiservice.onrender.com:3000/api/v1/send_notifications';
+      const apiUrl = '/api/v1/send_notifications';
       const groupIds = Array.isArray(groupId) ? groupId : [groupId];
       const response = await fetch(apiUrl, {
         method: 'POST',

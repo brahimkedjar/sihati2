@@ -33,6 +33,7 @@ function DoctorPage() {
     // Render a loading indicator while the data is being fetched
     return <div>Loading...</div>;
   }
+  console.log(doctorData);
     return (
       <div className={classes.DoctorPage}>
         <NavBarDoc />
