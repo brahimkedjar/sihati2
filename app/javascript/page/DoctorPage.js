@@ -24,7 +24,7 @@ function DoctorPage() {
   const [doctorData, setDoctorData] = useState(null);
   useEffect(() => {
     // Fetch the user data from the API
-    fetch('/api/v1/doctor_data')
+    fetch('https://sihatiservice.onrender.com/api/v1/doctor_data')
       .then(response => response.json())
       .then(data => setDoctorData(data))
       .catch(error => console.error(error));

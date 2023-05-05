@@ -23,7 +23,7 @@ function PatientPage() {
 
   useEffect(() => {
     // Fetch the user data from the API
-    fetch('/api/v1/patient_data')
+    fetch('https://sihatiservice.onrender.com/api/v1/patient_data')
       .then(response => response.json())
       .then(data => setUserData(data))
       .catch(error => console.error(error));

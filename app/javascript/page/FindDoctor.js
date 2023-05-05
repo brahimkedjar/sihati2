@@ -15,7 +15,7 @@ function FindDoctor(props) {
   // Define function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:5020/assign_group", {
+    fetch("https://recommendersystem.onrender.com/assign_group", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
