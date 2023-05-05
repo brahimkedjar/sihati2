@@ -1,26 +1,26 @@
 {
-  "application.js": "/packs/js/application-4d48b3ff41fe73067824.js",
-  "application.js.map": "/packs/js/application-4d48b3ff41fe73067824.js.map",
+  "application.js": "/packs/js/application-50e4d2a648ca7fdb729f.js",
+  "application.js.map": "/packs/js/application-50e4d2a648ca7fdb729f.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-4d48b3ff41fe73067824.js"
+        "/packs/js/application-50e4d2a648ca7fdb729f.js"
       ],
       "js.map": [
-        "/packs/js/application-4d48b3ff41fe73067824.js.map"
+        "/packs/js/application-50e4d2a648ca7fdb729f.js.map"
       ]
     },
     "index": {
       "js": [
-        "/packs/js/index-2d7ea7d7eb5928bb5878.js"
+        "/packs/js/index-050fcb45a07bac19b32d.js"
       ],
       "js.map": [
-        "/packs/js/index-2d7ea7d7eb5928bb5878.js.map"
+        "/packs/js/index-050fcb45a07bac19b32d.js.map"
       ]
     }
   },
-  "index.js": "/packs/js/index-2d7ea7d7eb5928bb5878.js",
-  "index.js.map": "/packs/js/index-2d7ea7d7eb5928bb5878.js.map",
+  "index.js": "/packs/js/index-050fcb45a07bac19b32d.js",
+  "index.js.map": "/packs/js/index-050fcb45a07bac19b32d.js.map",
   "media/img/AppointmentsPage.png": "/packs/media/img/AppointmentsPage-b5c867ca94f85334d12be503ba10253f.png",
   "media/img/avatar.jpg": "/packs/media/img/avatar-6e62f80f9c62022b7bf5b9bba4c44768.jpg",
   "media/img/cal.png": "/packs/media/img/cal-9af8506783cad9e94e75eb23b317a73a.png",

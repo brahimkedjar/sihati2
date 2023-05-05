@@ -178,7 +178,7 @@ const PatientList = (props) => {
     const shadowUrl = 'https://maps.google.com/mapfiles/ms/micons/msmarker.shadow.png';
 
     const doctorId = doctorData.doctor_data.id;
-    const url = 'http://192.168.77.170:5004/recommender_patients';
+    const url = 'https://recommender-system-9lr3.onrender.com/recommender_patients';
     const headers = { 'Content-Type': 'application/json' };
     const body = JSON.stringify({
       doctor_id: doctorId,

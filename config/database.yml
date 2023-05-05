@@ -7,23 +7,22 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>
+  host: dpg-ch767erhp8u9bo5brscg-a.oregon-postgres.render.com
   port: 5432
-  database: db
-  username: postgres
-  password: crb12345
+  database: sihati
+  username: sihati_user
+  password: a6lysuWTgFc3dPl5Dl0IVDMcvVhq74Vh
 
 development:
-  <<: *default
   adapter: postgresql
   encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>
+  host: dpg-ch767erhp8u9bo5brscg-a.oregon-postgres.render.com
   port: 5432
-  database: db
-  username: postgres
-  password: crb12345
+  database: sihati
+  username: sihati_user
+  password: a6lysuWTgFc3dPl5Dl0IVDMcvVhq74Vh
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
