@@ -13,11 +13,11 @@ module Api
 
     if previous_image
       previous_image.update(image: params[:image])
-      render json: { id: previous_image.id, image_url: url_for(previous_image.image) }, status: :ok
+      render json: { id: previous_image.id, image_url: url_for(previous_image.image, protocol: 'https') }, status: :ok
     else
       image = current_user.images.new(image: params[:image])
       if image.save
-        render json: { id: image.id, image_url: url_for(image.image) }, status: :created
+        render json: { id: image.id, image_url: url_for(image.image, protocol: 'https') }, status: :created
       else
         render json: { errors: image.errors.full_messages }, status: :unprocessable_entity
       end

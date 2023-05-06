@@ -8,11 +8,12 @@ module Api::V1
           doctor = Doctor.find_by(id: current_user.doctor_id)
           user = User.find_by(doctor_id: doctor.id)
           image = user.images.find_by(user_id: user.id)
+          jwt_token = JWT.encode({ doctor_id: doctor.id }, Rails.application.secrets.secret_key_base)
 
           if image.present?
-            doctor_data = { "image_url": url_for(image.image), "email": doctor.email, "doctor_data": doctor }.to_json
+            doctor_data = { "image_url": url_for(image.image), "email": doctor.email, "doctor_data": doctor ,"access_token": jwt_token}.to_json
           else
-            doctor_data = { "email": doctor.email, "doctor_data": doctor }.to_json
+            doctor_data = { "email": doctor.email, "doctor_data": doctor,"access_token": jwt_token }.to_json
           end
 
           render json: doctor_data

@@ -12,6 +12,7 @@ module SihatiFinal
     config.active_storage.variant_processor = :vips
     config.active_storage.variant_processor_library = :vips
     config.session_store :cookie_store, key: '_interslice_session'
+    config.action_controller.default_url_options = {protocol: 'https', host: 'https://sihatiservice.onrender.com' }
     config.middleware.use ActionDispatch::Cookies
     config.web_console.whitelisted_ips = ['192.168.42.170', '192.168.42.247','192.168.77.111','172.17.0.1']
     config.middleware.use config.session_store, config.session_options
